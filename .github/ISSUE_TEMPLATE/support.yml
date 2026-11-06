@@ -1,0 +1,28 @@
+name: Player support
+description: Ask a question or report a problem with Proximity.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Reports and replies are public. Share only technical details; leave out email addresses, passwords, payment details and personal information about children. A parent or guardian should submit requests for children.
+  - type: textarea
+    id: question
+    attributes:
+      label: What can we help with?
+      description: For a bug, describe what you did, what you expected and what happened instead.
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and iOS version
+      placeholder: For example, iPhone 18 Pro, iOS 27.2
+  - type: input
+    id: version
+    attributes:
+      label: Proximity version
+  - type: textarea
+    id: frequency
+    attributes:
+      label: When does it happen?
+      description: Does it happen every time, after switching apps, or after connecting or disconnecting headphones?
